@@ -1,0 +1,25 @@
+The chosen data structure is a HashMap in Java, which is a hash table implementation that stores key-value pairs.
+
+Time Complexity Analysis:
+
+-Add Operation (addProduct method) :The add operation involves putting a new key-value pair into the HashMap.
+The time complexity of this operation is O(1) on average, assuming a good hash function is used.
+However, in the worst case, the time complexity can be O(n) if there are hash collisions.
+-Update Operation (updateProduct method) :The update operation involves checking if the key exists
+in the HashMap using the containsKey method,  which has a time complexity of O(1). 
+If the key exists, the value is updated using the put method, which has a time complexity of O(1) on average.
+Therefore, the overall time complexity of the update operation is O(1).
+-Delete Operation (deleteProduct method) :The delete operation involves checking if the key exists in the 
+HashMap using the containsKey method, which has a time complexity of O(1).
+If the key exists, the key-value pair is removed using the remove method, which has a time complexity of O(1) on average.
+Therefore, the overall time complexity of the delete operation is O(1).
+
+Optimization Discussion:
+
+To optimize these operations, the following strategies can be employed:
+-Use a good hash function: A good hash function can minimize the number of hash collisions, which can improve the performance of the add, update, and delete operations.
+-Use a suitable initial capacity: Setting an initial capacity for the HashMap can help reduce the number of resize operations, which can improve performance.
+-Use a load factor: Setting a load factor can help control the number of entries in the HashMap, which can improve performance by reducing the number of hash collisions.
+-Use a concurrent HashMap implementation: If the HashMap is accessed by multiple threads, using a concurrent implementation can improve performance by reducing the need for synchronization.
+-Use a caching mechanism: Implementing a caching mechanism can improve performance by reducing the number of times the HashMap needs to be accessed.
+Overall, the HashMap implementation provides good performance for the add, update, and delete operations, with average time complexities of O(1).However, by employing optimization strategies, the performance can be further improved.

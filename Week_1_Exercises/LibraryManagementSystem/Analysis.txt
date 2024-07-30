@@ -1,0 +1,24 @@
+Time Complexity Comparison:
+
+Linear Search :The time complexity of linear search is O(n), where n is the number of books in the library. 
+This is because the algorithm iterates through each book in the library to find the matching title.
+Binary Search :The time complexity of binary search is O(log n), where n is the number of books in the library. 
+This is because the algorithm divides the search space in half at each step, reducing the number of comparisons 
+needed to find the matching title.
+
+Linear Search :Use linear search when:
+The data set is small (e.g., fewer than 100 books).
+The data set is not sorted or is sorted in a way that makes binary search impractical.
+The search is performed infrequently, and the overhead of sorting the data set is not justified.
+
+Binary Search :Use binary search when:
+The data set is large (e.g., thousands or millions of books).
+The data set is sorted in a way that makes binary search practical (e.g., alphabetically by title).
+The search is performed frequently, and the overhead of sorting the data set is justified by the improved search performance.
+
+In the code, the Library class uses linear search, while the LibrarySearch class uses binary search. 
+The Main class demonstrates the use of both algorithms to search for a book by title.
+
+
+
+
