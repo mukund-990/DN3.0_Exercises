@@ -3,7 +3,7 @@ public class Main {
         Logger logger1 = Logger.getInstance();
         Logger logger2 = Logger.getInstance();
 
-        System.out.println(logger1 == logger2); // Should print true
+        System.out.println(logger1 == logger2);
 
         logger1.log("Hello, world!");
     }
